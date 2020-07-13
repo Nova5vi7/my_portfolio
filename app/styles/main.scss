@@ -1,0 +1,344 @@
+@import "_fonts";
+@import "_bootstrap";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter";
+  font-weight: bold;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #151e29;
+  color: white;
+}
+
+.profile {
+  padding: 50px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  &__my-info {
+    max-width: 662px;
+  }
+
+  .info-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__tagline {
+    font-family: "Inter";
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+  }
+
+  &__bio {
+    max-width: 662px;
+    font-family: "Inter";
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .image {
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  &__button {
+    margin-bottom: 18px;
+  }
+
+  .btn {
+    font-family: "Inter";
+    font-weight: bold;
+    padding: 6px 16px;
+    height: 40px;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+  }
+
+  &__btn-portfolio {
+    background-color: #5ecca9;
+    margin-right: 10px;
+    &:hover {
+      color: white;
+      background-color: #2c775f;
+    }
+  }
+
+  &__btn-resume {
+    background-color: #797575;
+
+    &:hover {
+      color: white;
+      background-color: #535050;
+    }
+  }
+
+  .link {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    margin-right: 15px;
+    color: white;
+    transition: all 0.3s ease;
+    &:hover {
+      color: gray;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.my-skills {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  .title {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 100%;
+      background: #5ecca9;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__intro {
+    font-family: "Inter";
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  .link-skill {
+    text-decoration: none;
+    color: #5ecca9;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #2c775f;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__skill {
+    margin-right: 70px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 30px;
+  }
+  .icon-npm {
+    width: 34px;
+    height: 30px;
+    margin-right: 5px;
+    color: #bb443e;
+  }
+  .icon-sass {
+    width: 38px;
+    height: 30px;
+    color: #bf6b97;
+  }
+  .icon-js {
+    width: 27px;
+    height: 30px;
+    color: #f1de4f;
+  }
+  .icon-gulp {
+    width: 15px;
+    height: 30px;
+    color: #c9514e;
+  }
+  .html {
+    margin-right: 5px;
+    color: #de6e3c;
+  }
+  .css {
+    color: #53a7dc;
+  }
+
+  &__title-skill {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__progress {
+    height: 12px;
+    border-radius: 2px;
+    display: flex;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #e9ecef;
+    min-width: 203px;
+  }
+
+  &__progress-bar {
+    width: 98%;
+    background-color: #434e5e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Inter";
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+  }
+  .progress-html {
+    width: 85%;
+  }
+
+  .progress-js {
+    width: 50%;
+  }
+
+  .progress-sass {
+    width: 90%;
+  }
+
+  .progress-gulp {
+    width: 70%;
+  }
+}
+
+.my-portfolio {
+  padding: 50px 0;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  .title {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    padding-left: 24px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 100%;
+      background: #5ecca9;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__work-title {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 9px;
+  }
+
+  &__img-wrap {
+    margin-bottom: 15px;
+  }
+
+  .image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .text-wrap {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-family: "Inter";
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__links {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__btn {
+    font-family: "Inter";
+    font-weight: bold;
+    padding: 6px 16px;
+    height: 40px;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+  }
+
+  .live {
+    margin-right: 10px;
+    background-color: #5ecca9;
+
+    &:hover {
+      color: white;
+      background-color: #2c775f;
+    }
+  }
+
+  .source {
+    background-color: #797575;
+
+    &:hover {
+      color: white;
+      background-color: #535050;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
