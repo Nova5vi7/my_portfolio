@@ -58,7 +58,7 @@ function scripts() {
 
   return b
     .bundle()
-    .pipe(source("bundle.js"))
+    .pipe(source("main.js"))
     .pipe($.plumber())
     .pipe(buffer())
     .pipe($.if(!isProd, $.sourcemaps.init({ loadMaps: true })))

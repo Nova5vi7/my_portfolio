@@ -29,7 +29,7 @@ body {
     max-width: 662px;
   }
 
-  .info-wrap {
+  &__info-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,7 +68,7 @@ body {
   .btn {
     font-family: "Inter";
     font-weight: bold;
-    padding: 6px 16px;
+    padding: 7px 16px 6px;
     height: 40px;
     font-size: 16px;
     transition: all 0.4s ease;
@@ -140,7 +140,7 @@ body {
     font-family: "Inter";
     color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
-    margin-bottom: 48px;
+    margin-bottom: 35px;
   }
   .link-skill {
     text-decoration: none;
@@ -158,6 +158,7 @@ body {
 
   &__skill {
     margin-right: 70px;
+    padding: 15px 0;
   }
 
   .icon {
@@ -280,6 +281,11 @@ body {
     font-weight: bold;
     font-size: 21px;
     margin-bottom: 9px;
+    color: white;
+    transition: all 0.3s ease;
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
   }
 
   &__img-wrap {
@@ -310,7 +316,7 @@ body {
   &__btn {
     font-family: "Inter";
     font-weight: bold;
-    padding: 6px 16px;
+    padding: 7px 16px 6px;
     height: 40px;
     font-size: 16px;
     transition: all 0.4s ease;
@@ -362,5 +368,92 @@ body {
     vertical-align: -4px;
     font-size: inherit;
     color: #fb866a;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .my-portfolio {
+    &__title {
+      margin-bottom: 55px;
+    }
+
+    &__wrap {
+      margin-bottom: 60px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    .text-wrap {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .profile {
+    &__info-wrap {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__image-wrap {
+      margin-bottom: 20px;
+    }
+  }
+
+  .my-skills {
+    &__info {
+      justify-content: center;
+    }
+
+    &__skill {
+      &:nth-last-child(2n + 1) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .my-skills {
+    &__info {
+      flex-direction: column;
+    }
+    &__skill {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 341px) {
+  .profile {
+    &__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__btn-portfolio,
+    &__btn-resume {
+      width: 143px;
+      margin: 0;
+      margin-bottom: 15px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &__links {
+      display: flex;
+      justify-content: center;
+    }
+
+    .link {
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 }
