@@ -3,6 +3,5 @@
 // @include  - команда использования миксина
 // font-face - название миксина
 // в скобках (название шрифта, путь к шрифту, font-weight)
-@include font-face("Inter", "../fonts/inter-bold/Inter-Bold", bold);
-@include font-face("Inter", "../fonts/inter-medium/Inter-Medium", 600);
-@include font-face("Inter", "../fonts/inter-regular/Inter-Regular");
+@include font-face("Open-Sans", "../fonts/opensans-bold/OpenSans-Bold", bold);
+@include font-face("Open-Sans", "../fonts/opensans-regular/OpenSans-Regular");
