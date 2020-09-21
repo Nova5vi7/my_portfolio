@@ -166,7 +166,8 @@ body {
     padding: 15px 0;
   }
 
-  .icon {
+  .icon-html,
+  .icon-css {
     width: 25px;
     height: 30px;
   }
@@ -189,7 +190,7 @@ body {
   .icon-react {
     width: 27px;
     height: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
     color: #61dafb;
   }
   .icon-redux {
@@ -198,16 +199,12 @@ body {
     color: #764abc;
   }
   .icon-gulp {
-    width: 15px;
+    width: 35px;
     height: 30px;
     color: #c9514e;
   }
-  .html {
+  .icon-html {
     margin-right: 5px;
-    color: #de6e3c;
-  }
-  .css {
-    color: #53a7dc;
   }
 
   &__title-skill {
