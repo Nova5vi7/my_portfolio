@@ -186,6 +186,15 @@ body {
     height: 30px;
     color: #f1de4f;
   }
+  .icon-react {
+    width: 27px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .icon-redux {
+    width: 27px;
+    height: 30px;
+  }
   .icon-gulp {
     width: 15px;
     height: 30px;
@@ -234,7 +243,7 @@ body {
   }
 
   .progress-js {
-    width: 50%;
+    width: 65%;
   }
 
   .progress-sass {
@@ -243,6 +252,9 @@ body {
 
   .progress-gulp {
     width: 70%;
+  }
+  .progress-react {
+    width: 60%;
   }
 }
 
@@ -412,12 +424,6 @@ body {
   .my-skills {
     &__info {
       justify-content: center;
-    }
-
-    &__skill {
-      &:nth-last-child(2n + 1) {
-        margin: 0;
-      }
     }
   }
 }
